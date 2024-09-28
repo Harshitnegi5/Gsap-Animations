@@ -1,0 +1,85 @@
+@font-face {
+  font-family: neue;
+  src: url(./assets/Fonts/PPNeueWorld-Thin.woff2);
+}
+@font-face {
+  font-family: timmons;
+  src: url(./assets/Fonts/TimmonsNY-Regular.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: neue; */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 3em;
+  background-color: rgb(0, 0, 0);
+
+  .website-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font: 200 20vw neue;
+      color: #ebdc0b;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+      span {
+        position: relative;
+        top: 400px;
+      }
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 2em;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+        font: lighter 36px timmons;
+        text-transform: uppercase;
+        color: #ebdc0b;
+      }
+    }
+  }
+
+  .hero-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      object-position: 0 40%;
+      position: absolute;
+      clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+  }
+}
