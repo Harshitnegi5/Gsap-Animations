@@ -39,7 +39,8 @@ body {
     h1 {
       font: 200 20vw neue;
       color: #ebdc0b;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      overflow: hidden;
+
 
       span {
         position: relative;
@@ -77,7 +78,7 @@ body {
       width: 100%;
       object-fit: cover;
       display: block;
-      object-position: 0 40%;
+      /* object-position: 0 40%; */
       position: absolute;
       clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
     }
